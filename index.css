@@ -1,38 +1,136 @@
 *{
-    color: rgb(205, 26, 26);
+    /* color: rgb(205, 26, 26); */
+    font-weight: bold;
     text-align: center;
 }
 body{
-    background-color: greenyellow;
+    background-color: rgba(54, 55, 54, 0.324);
 }
 .Main-Container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* align-items: center; */
 
 }
 .Title{
     width: 100%;
-    border-bottom: solid 3px #ecb2b2;
+    border-bottom: solid 3px #fdfdfd;
+    margin-bottom: 8px;
 }
 .Title h2{
     text-align: center;
-    font-size: 1.10rem;
+    font-size: 20px;
 }
-.Messages{
-    width: 100%;
-    text-align: center;
-    margin-top: 0.5rem;
-    font-size: 1rem;
+
+.Messages p{
+    /* border-radius: 10px; */
+    padding: 1px;
+    margin: 0;
+    border-color: black;
+    color: rgb(251, 1, 1);
+    font-weight: bold;
+    text-decoration: underline;
 }
 .Entire-Container{
-    height: 70vh;
+    height: 69vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.Entire-Container div{
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.Entire-Container .placeinput{
+    margin-bottom: 20px;
+    width: 80px;
+    height: 90px;
+    border: 2px solid rgb(253, 253, 253);
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    width: auto;
+    justify-content: center;
+}
+
+.footer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: solid 3px #fcfcfc;
+}
+
 .Keypad-Container{
+    width: 47%;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+}
+.Keypad-Container button{
+    width: 5rem;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    margin: 4px;
+    font-size: 22px;
+}
+.Keypad-Container button:hover{
+    background-color: rgb(128, 125, 125);
+}
+button:nth-child(11){
+    width: 7rem;
+    margin-left: 43px;
+}
+button:nth-child(18){
+    width: 7rem;
+    
+}
+
+/* color rotation */
+
+.placeinput.flip {
+    animation: 0.6s linear flipping;
+}
+
+@keyframes flipping{
+    20% {
+        transform: rotateX(0deg);
+    }
+     30% {
+        transform: rotateX(90deg);
+    }
+     90% {
+        transform: rotateX(10deg);
+    }
+}
+
+/* color styles */
+
+.grey-overlay {
+    background-color: #3a3a3c !important;
+    /* border: #444445 !important; */
+    
+}
+
+.yellow-overlay {
+    background-color: #b59f3a !important;
+    /* border-color:#d8bb39 !important; */
+}
+
+.green-overlay {
+    background-color: #538d4e !important;
+    /* border: #5ae14e !important; */
 }
